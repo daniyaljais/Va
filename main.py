@@ -24,7 +24,7 @@ genai.configure(api_key=api_key)
 logger.info("Google API configured")
 
 # Load embeddings
-embeddings_file = "/Users/nilofar/myfolder/F1/embeddings.npz"
+embeddings_file = "embeddings.npz"
 try:
     if not os.path.exists(embeddings_file):
         raise FileNotFoundError(f"{embeddings_file} not found")
